@@ -8,8 +8,8 @@ async function sendMessage() {
   // Show user's message
   chatBox.innerHTML += `<div><b>You:</b> ${userText}</div>`;
 
-  // Send the message to your backend API
-  const response = await fetch("https://YOUR-NGROK-URL/chat", {
+  // Send the message to your backend API (ngrok public URL)
+  const response = await fetch("https://c75c-34-106-217-16.ngrok-free.app/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
